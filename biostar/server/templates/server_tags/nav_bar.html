@@ -2,7 +2,7 @@
 {% load server_tags %}
 
 <div class="row visible-lg visible-md">
-    <div class="col-md-12 text-center" id="topnav">
+    <div class="col-md-12 text-center" id="topnav" style="display:none">
             {% for word in CATEGORIES %}
                 <div class="col-md-1 {% active word topic %}">
                     <a href="{% url 'topic-list' topic=word %}">{{ word }}</a>
